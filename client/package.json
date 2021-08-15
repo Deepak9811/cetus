@@ -1,0 +1,28 @@
+{
+  "name": "celebrities",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3002",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "deploy": "npm run build && gcloud app deploy -q --project cetus-1",
+    "browse": "gcloud app browse --project=cetus-1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "mongoose": "^5.11.7",
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "17.0.1",
+    "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.2.2",
+    "react-loader-spinner": "^3.1.14",
+    "react-native-webview-invoke": "^0.6.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.32.4",
+    "swiper": "^6.3.5"
+  }
+}
