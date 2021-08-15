@@ -1,0 +1,3 @@
+dispatch:
+  - url: "api.celebze.com/*"
+    service: api

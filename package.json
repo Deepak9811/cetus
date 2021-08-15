@@ -1,0 +1,16 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "scripts": {
+    "push": "git status && git add . && git commit -m 'regular-update' && git push",
+    "push-shutdown": "git status && git add . && git commit -m 'regular-update' && git push && shutdown/s",
+    "pull":"git pull",
+    "client":"cd client && npm run dev",
+    "server":"cd server && npm run dev",
+    "deploy:server":"cd server && npm run deploy",
+    "deploy:client":"cd client && npm run build && npm run deploy",
+    "build":"cd client && npm run build",
+    "deploy:both":"npm run deploy:server && npm run deploy:client"
+  }
+}
